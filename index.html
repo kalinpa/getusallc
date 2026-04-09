@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GetUSA LLC</title>
+<meta name="description" content="Регистрация на американска фирма (LLC) от България. Работете директно с лицензиран CPA и адвокат в САЩ. EIN, ITIN, банкова сметка, Stripe — 100% дистанционно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet"></noscript>
+<meta property="og:title" content="GetUSA LLC — Американска фирма от България">
+<meta property="og:description" content="Регистрация на LLC, данъчен номер, банкова сметка и Stripe — 100% дистанционно. Лицензиран CPA и адвокат в САЩ.">
+<meta property="og:image" content="https://www.getusallc.com/og.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://www.getusallc.com">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="bg_BG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GetUSA LLC — Американска фирма от България">
+<meta name="twitter:description" content="Регистрация на LLC, данъчен номер, банкова сметка и Stripe — 100% дистанционно.">
+<meta name="twitter:image" content="https://www.getusallc.com/og.webp">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fafaf8;--white:#fff;--ink:#111318;--ink2:#2a2d35;--gray:#6b7080;--gray-light:#9ca3af;--border:#e5e7eb;--border-light:#f0f1f3;--surface:#f3f4f6;--orange:#d95b1c;--orange-soft:#fff0e8;--orange-hover:#c44e15;--green:#16a34a;--green-soft:#dcfce7;--blue:#2563eb;--font:'Outfit',-apple-system,sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);font-weight:500;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 2.5rem;background:rgba(250,250,248,0.9);backdrop-filter:blur(20px) saturate(1.3);border-bottom:1px solid var(--border-light);transition:all .3s}
+nav.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.05)}
+.logo{display:flex;align-items:center;gap:.55rem;text-decoration:none}
+.logo-icon{width:34px;height:34px;border-radius:9px;background:var(--orange);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.65rem;letter-spacing:.04em;line-height:1}
+.logo-text{font-weight:800;font-size:1.1rem;color:var(--ink);letter-spacing:-.02em}
+.logo-text span{color:var(--orange)}
+.nav-links{display:flex;gap:1.75rem;align-items:center}
+.nav-links a{text-decoration:none;color:var(--gray);font-size:.88rem;font-weight:600;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--orange);color:white !important;padding:.6rem 1.4rem;border-radius:8px;font-weight:700 !important;transition:all .3s}
+.nav-cta:hover{background:var(--orange-hover);transform:translateY(-1px);box-shadow:0 6px 20px rgba(217,91,28,.25)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2.5rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-120px;right:-120px;width:600px;height:600px;background:radial-gradient(circle,rgba(217,91,28,.06) 0%,transparent 65%);pointer-events:none}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange-soft);border:1px solid rgba(217,91,28,.15);padding:.45rem 1rem;border-radius:100px;font-size:.8rem;font-weight:700;color:var(--orange);margin-bottom:1.5rem;animation:fadeUp .6s ease both}
+.hero-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 6px rgba(22,163,74,.5);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:clamp(2.6rem,4.8vw,3.8rem);font-weight:800;line-height:1.08;letter-spacing:-.035em;color:var(--ink);margin-bottom:1.5rem;animation:fadeUp .6s .08s ease both}
+.hero h1 .hi{color:var(--orange)}
+.hero-desc{font-size:1.1rem;color:var(--gray);font-weight:500;line-height:1.75;max-width:490px;margin-bottom:2.25rem;animation:fadeUp .6s .16s ease both}
+.hero-btns{display:flex;gap:.75rem;flex-wrap:wrap;animation:fadeUp .6s .24s ease both}
+.btn-main{background:var(--orange);color:white;padding:.95rem 2.2rem;border-radius:10px;font-weight:700;font-size:.95rem;font-family:var(--font);text-decoration:none;border:none;cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:.4rem}
+.btn-main:hover{background:var(--orange-hover);transform:translateY(-2px);box-shadow:0 10px 30px rgba(217,91,28,.25)}
+.btn-ghost{background:var(--white);color:var(--ink);padding:.95rem 2.2rem;border-radius:10px;font-weight:700;font-size:.95rem;font-family:var(--font);text-decoration:none;border:1.5px solid var(--border);transition:all .3s}
+.btn-ghost:hover{border-color:var(--ink)}
+.hero-visual{position:relative;animation:fadeUp .6s .3s ease both}
+.hero-img-wrap{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.06)}
+.hero-img-placeholder{width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,var(--surface) 0%,var(--border-light) 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
+.hero-img-placeholder .emoji{font-size:3.5rem;margin-bottom:.75rem}
+.hero-img-placeholder p{font-size:.85rem;font-weight:600;color:var(--gray-light)}
+.fbadge{position:absolute;background:var(--white);border:1px solid var(--border);padding:.65rem 1rem;border-radius:10px;display:flex;align-items:center;gap:.55rem;font-size:.82rem;font-weight:700;color:var(--ink);box-shadow:0 8px 25px rgba(0,0,0,.07);animation:bobble 5s ease-in-out infinite}
+.fbadge.a{top:8%;left:-16px;animation-delay:0s}
+.fbadge.b{bottom:20%;right:-16px;animation-delay:1.8s}
+.fbadge.c{bottom:52%;left:-24px;animation-delay:3.2s}
+@keyframes bobble{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.bdot{width:9px;height:9px;border-radius:50%}
+.bdot.g{background:var(--green)}.bdot.b{background:var(--blue)}.bdot.o{background:var(--orange)}
+.stats-bar{background:var(--ink);padding:2.5rem}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.stat{text-align:center}
+.stat-val{font-size:2rem;font-weight:800;color:white}
+.stat-val em{font-style:normal;color:var(--orange)}
+.stat-lbl{font-size:.82rem;font-weight:600;color:rgba(255,255,255,.45);margin-top:.15rem}
+section{padding:6rem 2.5rem}
+.sec{max-width:1200px;margin:0 auto}
+.tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:800;color:var(--orange);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.75rem}
+.tag::before{content:'';width:18px;height:2.5px;background:var(--orange);border-radius:2px}
+.stitle{font-size:clamp(1.8rem,3.2vw,2.5rem);font-weight:800;line-height:1.15;letter-spacing:-.025em;color:var(--ink);margin-bottom:.75rem}
+.sdesc{font-size:1.05rem;color:var(--gray);max-width:540px;line-height:1.7;font-weight:500}
+.ps{background:var(--white)}
+.ps-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem}
+.ps-head{font-weight:800;font-size:1.1rem;color:var(--ink);margin-bottom:1.25rem}
+.ps-row{display:flex;gap:1rem;align-items:flex-start;padding:1.15rem 0;border-bottom:1px solid var(--border-light)}
+.ps-dot{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;flex-shrink:0}
+.ps-dot.bad{background:#fef2f2;color:#ef4444}
+.ps-dot.ok{background:var(--green-soft);color:var(--green)}
+.ps-row h3{font-weight:700;font-size:.95rem;color:var(--ink2);margin-bottom:.1rem}
+.ps-row p{font-size:.88rem;color:var(--gray);font-weight:500;line-height:1.55}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.srv{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.srv:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.06);border-color:#d1d5db}
+.srv.pop{border-color:var(--orange)}
+.srv.pop .pop-tag{position:absolute;top:1rem;right:1rem;background:var(--orange);color:white;font-size:.7rem;font-weight:800;padding:.25rem .65rem;border-radius:6px;text-transform:uppercase;letter-spacing:.04em}
+.srv-ico{width:46px;height:46px;border-radius:11px;background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:1.35rem;margin-bottom:1.25rem}
+.srv h3{font-weight:800;font-size:1.1rem;color:var(--ink);margin-bottom:.4rem}
+.srv .price{font-weight:800;font-size:1.5rem;color:var(--orange)}
+.srv .pnote{font-size:.82rem;color:var(--gray);font-weight:600;margin-bottom:1.15rem}
+.srv ul{list-style:none;margin-bottom:1.5rem}
+.srv li{font-size:.88rem;font-weight:600;color:var(--gray);padding:.4rem 0 .4rem 1.5rem;position:relative}
+.srv li::before{content:'\2713';position:absolute;left:0;color:var(--green);font-weight:800}
+.srv-btn{display:block;text-align:center;width:100%;padding:.85rem;border-radius:10px;font-weight:700;font-size:.9rem;font-family:var(--font);text-decoration:none;transition:all .3s;border:1.5px solid var(--border);color:var(--ink);background:transparent;cursor:pointer}
+.srv-btn:hover{border-color:var(--ink);background:var(--surface)}
+.srv-btn.orange{background:var(--orange);border-color:var(--orange);color:white}
+.srv-btn.orange:hover{background:var(--orange-hover);border-color:var(--orange-hover)}
+.steps{background:var(--white)}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:3rem}
+.stp{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:2rem 1.5rem;transition:all .3s}
+.stp:hover{border-color:#d1d5db;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+.stp-n{font-weight:800;font-size:2.5rem;color:var(--orange);opacity:.2;line-height:1;margin-bottom:.75rem}
+.stp h3{font-weight:800;font-size:1rem;color:var(--ink);margin-bottom:.4rem}
+.stp p{font-size:.88rem;color:var(--gray);font-weight:500;line-height:1.6}
+.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:3rem}
+.tcard{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:1.75rem;display:flex;gap:1.25rem;align-items:flex-start;transition:all .3s;text-decoration:none;color:inherit;cursor:pointer}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.05);border-color:#d1d5db}
+.tcard-ico{width:48px;height:48px;border-radius:12px;background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.tcard h3{font-weight:800;font-size:1rem;color:var(--ink);margin-bottom:.3rem}
+.tcard p{font-size:.88rem;color:var(--gray);font-weight:500;line-height:1.55}
+.tcard-link{display:inline-block;margin-top:.4rem;font-size:.82rem;font-weight:700;color:var(--orange)}
+.adv{background:var(--white)}
+.adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
+.adv-card{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:2.5rem;position:relative;overflow:hidden}
+.adv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange)}
+.adv-card h3{font-weight:800;font-size:1.15rem;color:var(--ink);margin-bottom:.65rem}
+.adv-card>p{font-size:.95rem;color:var(--gray);font-weight:500;line-height:1.7;margin-bottom:1.25rem}
+.adv-list{display:flex;flex-direction:column;gap:.6rem}
+.adv-item{display:flex;align-items:center;gap:.6rem;font-size:.92rem;font-weight:700;color:var(--ink2)}
+.adv-chk{width:22px;height:22px;border-radius:6px;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:900;flex-shrink:0}
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+.tst{background:var(--white);border:1.5px solid var(--border);border-radius:14px;padding:2rem}
+.tst-stars{color:#f59e0b;font-size:.88rem;margin-bottom:.75rem;letter-spacing:2px}
+.tst p{font-size:.92rem;color:var(--gray);line-height:1.7;font-weight:500;margin-bottom:1.25rem}
+.tst-who{display:flex;align-items:center;gap:.7rem}
+.tst-av{width:40px;height:40px;border-radius:50%;background:var(--orange-soft);color:var(--orange);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem}
+.tst-name{font-weight:800;font-size:.9rem;color:var(--ink)}
+.tst-role{font-size:.8rem;color:var(--gray);font-weight:600}
+.faq{background:var(--white)}
+.faq-list{max-width:720px;margin:3rem auto 0}
+.faq-item{border-bottom:1px solid var(--border-light)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.35rem 0;width:100%;border:none;background:none;text-align:left;color:var(--ink);font-family:var(--font);font-weight:700;font-size:1rem;cursor:pointer}
+.faq-plus{width:28px;height:28px;border-radius:7px;background:var(--surface);color:var(--gray);display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0;transition:all .3s}
+.faq-q.open .faq-plus{background:var(--orange);color:white;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
+.faq-a.open{max-height:350px;padding-bottom:1.25rem}
+.faq-a p{font-size:.92rem;color:var(--gray);line-height:1.75;font-weight:500}
+.cta-sec{background:var(--ink);text-align:center;padding:5.5rem 2.5rem;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(217,91,28,.1) 0%,transparent 55%);pointer-events:none}
+.cta-sec .stitle{color:white}
+.cta-sec .sdesc{color:rgba(255,255,255,.5);margin:0 auto 2rem}
+.cta-sec .btn-main{font-size:1.05rem;padding:1.05rem 2.5rem}
+.cta-meta{margin-top:1rem;font-size:.82rem;color:rgba(255,255,255,.3);font-weight:600}
+.cta-meta span{margin:0 .4rem}
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:4rem 2.5rem 2rem}
+.ftr{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem}
+.ftr-desc{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.6;margin-top:1rem;max-width:280px;font-weight:500}
+.ftr-col h3{font-weight:800;font-size:.82rem;color:white;margin-bottom:.9rem;text-transform:uppercase;letter-spacing:.08em}
+.ftr-col a{display:block;color:rgba(255,255,255,.65);text-decoration:none;font-size:.88rem;font-weight:600;padding:.3rem 0;transition:color .2s}
+.ftr-col a:hover{color:white}
+.ftr-btm{max-width:1200px;margin:3rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;font-size:.8rem;color:rgba(255,255,255,.6);font-weight:600}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+nav{padding:0 1.25rem;height:64px}
+.nav-links{display:none !important}
+#burger{display:block !important}
+.nav-logo{height:32px !important}
+section{padding:4rem 1.25rem}
+.hero{padding:6rem 1.25rem 3rem}
+.hero-inner{grid-template-columns:1fr;gap:2.5rem}
+.hero h1{font-size:2.2rem}
+.ps-grid,.adv-grid,.tools-grid{grid-template-columns:1fr}
+.srv-grid,.tst-grid{grid-template-columns:1fr}
+.steps-grid{grid-template-columns:1fr 1fr}
+.stats-inner{grid-template-columns:repeat(2,1fr)}
+.ftr{grid-template-columns:1fr !important;gap:2rem;text-align:center}
+.ftr>div:first-child{display:flex;flex-direction:column;align-items:center}
+.ftr .logo{justify-content:center}
+.ftr .logo img{height:30px !important}
+.ftr-desc{text-align:center;margin:0 auto}
+.ftr-btm{flex-direction:column;align-items:center;gap:.5rem}
+.fbadge{display:none}
+.cta-sec{padding:4rem 1.25rem}
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPSL5N5FRZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CPSL5N5FRZ');
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '880210438395323');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=880210438395323&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<nav id="nav">
+  <a href="#" class="logo"><img src="logo.webp" alt="GetUSA LLC" class="nav-logo" width="400" height="67" style="height:38px;width:auto"></a>
+  <div class="nav-links">
+    <a href="#services">Услуги</a>
+    <a href="#process">Процес</a>
+    <a href="#tools">Инструменти</a>
+    <a href="#faq">Въпроси</a>
+    <a href="contact.html" class="nav-cta">Свържете се</a>
+  </div>
+<button id="burger" onclick="toggleMenu()" aria-label="Отвори меню" style="display:none;background:none;border:none;cursor:pointer;padding:8px;z-index:102"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111318" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+</nav>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill"><span class="dot"></span> Лицензиран CPA и адвокат в САЩ</div>
+      <h1>Американска фирма.<br><span class="hi">Без да стъпваш<br>в Америка.</span></h1>
+      <p class="hero-desc">Регистрация на LLC, данъчен номер, банкова сметка и Stripe — от България. Работиш директно с американски CPA и адвокат, не с посредници.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn-main">Поискай оферта →</a>
+        <a href="#process" class="btn-ghost">Как работи</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap"><img src="picture.webp" alt="LLC Registration" width="800" height="600" fetchpriority="high" style="width:100%;height:auto;display:block"></div>
+      <div class="fbadge a"><span class="bdot g"></span> LLC Регистрирана</div>
+      <div class="fbadge b"><span class="bdot b"></span> Mercury сметка</div>
+      <div class="fbadge c"><span class="bdot o"></span> Stripe активен</div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar"><div class="stats-inner">
+  <div class="stat"><div class="stat-val">5<em>0</em></div><div class="stat-lbl">Щата</div></div>
+  <div class="stat"><div class="stat-val">5 <em>дни</em></div><div class="stat-lbl">Средно време</div></div>
+  <div class="stat"><div class="stat-val">10<em>0</em>%</div><div class="stat-lbl">Дистанционно</div></div>
+  <div class="stat"><div class="stat-val">CPA</div><div class="stat-lbl">Лицензиран в САЩ</div></div>
+</div></div>
+
+<section class="ps"><div class="sec reveal">
+  <span class="tag">Защо ние</span>
+  <h2 class="stitle">Познатите проблеми —<br>и нашите решения</h2>
+  <div class="ps-grid">
+    <div>
+      <div class="ps-head">Типичните пречки</div>
+      <div class="ps-row"><div class="ps-dot bad">✕</div><div><h3>Бюрокрация и объркване</h3><p>Десетки форми, непознати термини и противоречива информация от форуми.</p></div></div>
+      <div class="ps-row"><div class="ps-dot bad">✕</div><div><h3>Скрити разходи</h3><p>Агенции с ниски рекламни цени, но стотици евро скрити такси след това.</p></div></div>
+      <div class="ps-row"><div class="ps-dot bad">✕</div><div><h3>Посредници без лиценз</h3><p>Повечето услуги идват от препродавачи без юридическо образование.</p></div></div>
+    </div>
+    <div>
+      <div class="ps-head">Нашият подход</div>
+      <div class="ps-row"><div class="ps-dot ok">✓</div><div><h3>Стъпка по стъпка на български</h3><p>Ясни гайдове и лична подкрепа на всеки етап от процеса.</p></div></div>
+      <div class="ps-row"><div class="ps-dot ok">✓</div><div><h3>Индивидуална оферта</h3><p>Цена спрямо вашите конкретни нужди. Без скрити такси и изненади.</p></div></div>
+      <div class="ps-row"><div class="ps-dot ok">✓</div><div><h3>Директен достъп до CPA и адвокат</h3><p>Фирмата ви се обслужва от лицензиран американски специалист.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="services"><div class="sec reveal">
+  <span class="tag">Услуги</span>
+  <h2 class="stitle">Всичко, от което имате нужда</h2>
+  <p class="sdesc">Покриваме целия процес — от регистрация до данъчна декларация. Всяка оферта е индивидуална.</p>
+  <div class="srv-grid">
+    <div class="srv pop">
+      <span class="pop-tag">Най-популярна</span>
+      <div class="srv-ico">🏛</div><h3>LLC Регистрация</h3>
+      <div class="price">По запитване</div><div class="pnote">индивидуална оферта</div>
+      <ul><li>Регистрация в избран щат</li><li>EIN данъчен номер</li><li>Бизнес адрес в САЩ — 1 год.</li><li>Registered Agent — 1 год.</li><li>Operating Agreement</li><li>Viber / WhatsApp поддръжка</li></ul>
+      <a href="contact.html" class="srv-btn orange">Свържете се</a>
+    </div>
+    <div class="srv">
+      <div class="srv-ico">📋</div><h3>EIN Заявка</h3>
+      <div class="price">По запитване</div><div class="pnote">индивидуална оферта</div>
+      <ul><li>Подготовка на SS-4 формуляр</li><li>Официална заявка до IRS</li><li>Проследяване на процеса</li><li>Готов за 3–4 седмици</li></ul>
+      <a href="contact.html" class="srv-btn">Свържете се</a>
+    </div>
+    <div class="srv">
+      <div class="srv-ico">🪪</div><h3>ITIN Заявка</h3>
+      <div class="price">По запитване</div><div class="pnote">индивидуална оферта</div>
+      <ul><li>Подготовка на W-7 формуляр</li><li>Проверка на документи</li><li>Официална заявка до IRS</li><li>Пълно проследяване</li></ul>
+      <a href="contact.html" class="srv-btn">Свържете се</a>
+    </div>
+    <div class="srv">
+      <div class="srv-ico">📊</div><h3>Счетоводство</h3>
+      <div class="price">По запитване</div><div class="pnote">индивидуална оферта</div>
+      <ul><li>Категоризация на транзакции</li><li>Сканиране на разходи</li><li>Import от Mercury / Wise</li><li>Подготовка за CPA</li></ul>
+      <a href="contact.html" class="srv-btn">Свържете се</a>
+    </div>
+    <div class="srv">
+      <div class="srv-ico">📄</div><h3>Данъчна декларация</h3>
+      <div class="price">По запитване</div><div class="pnote">индивидуална оферта</div>
+      <ul><li>Annual Report подаване</li><li>Franchise Tax</li><li>Federal return за LLC</li><li>СИДДО консултация (БГ–САЩ)</li></ul>
+      <a href="contact.html" class="srv-btn">Свържете се</a>
+    </div>
+    <div class="srv">
+      <div class="srv-ico">💳</div><h3>Плащания и Банка</h3>
+      <div class="price">По запитване</div><div class="pnote">индивидуална оферта</div>
+      <ul><li>Mercury / Relay сметка</li><li>Stripe активиране</li><li>PayPal Business настройка</li><li>Wise Business интеграция</li></ul>
+      <a href="contact.html" class="srv-btn">Свържете се</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="steps" id="process"><div class="sec reveal">
+  <span class="tag">Процес</span>
+  <h2 class="stitle">Четири стъпки до вашата<br>американска фирма</h2>
+  <p class="sdesc">От заявката до първото плащане — ние се грижим за всичко.</p>
+  <div class="steps-grid">
+    <div class="stp"><div class="stp-n">01</div><h3>Попълнете формуляра</h3><p>Въведете основна информация за бизнеса. Отнема под 5 минути.</p></div>
+    <div class="stp"><div class="stp-n">02</div><h3>Получете оферта</h3><p>Изпращаме индивидуална оферта спрямо вашите нужди в рамките на 24ч.</p></div>
+    <div class="stp"><div class="stp-n">03</div><h3>Ние работим</h3><p>CPA и адвокат регистрират фирмата и подготвят документите.</p></div>
+    <div class="stp"><div class="stp-n">04</div><h3>Стартирайте бизнеса</h3><p>Получавате документи, отваряте банка и приемате плащания.</p></div>
+  </div>
+</div></section>
+
+<section id="tools"><div class="sec reveal">
+  <span class="tag">Инструменти</span>
+  <h2 class="stitle">Разберете преди да решите</h2>
+  <p class="sdesc">Безплатни инструменти за оценка на разходи и информирано решение.</p>
+  <div class="tools-grid">
+    <a href="#" class="tcard"><div class="tcard-ico">🧮</div><div><h3>Калкулатор на разходите</h3><p>Изберете щат и тип бизнес. Вижте точните разходи за регистрация и годишна поддръжка.</p><span class="tcard-link">Изчисли безплатно →</span></div></a>
+    <a href="#" class="tcard"><div class="tcard-ico">📋</div><div><h3>Данъчен тест</h3><p>8 въпроса, за да разберете дали и какви данъци дължите в САЩ като българско лице.</p><span class="tcard-link">Направи теста →</span></div></a>
+    <a href="#" class="tcard"><div class="tcard-ico">🗺</div><div><h3>Сравнение на щати</h3><p>Wyoming, Delaware или New Mexico — коя юрисдикция е подходяща за вашия бизнес.</p><span class="tcard-link">Сравни безплатно →</span></div></a>
+    <a href="#" class="tcard"><div class="tcard-ico">🔍</div><div><h3>Търсачка в съдържанието</h3><p>Намерете отговор на вашия въпрос в нашите гайдове и статии за секунди.</p><span class="tcard-link">Търси →</span></div></a>
+  </div>
+</div></section>
+
+<section class="adv"><div class="sec reveal">
+  <span class="tag">Предимство</span>
+  <h2 class="stitle">Защо GetUSA LLC, а не<br>поредната агенция</h2>
+  <div class="adv-grid">
+    <div class="adv-card"><h3>Лицензиран CPA и адвокат</h3><p>Не работите с посредник. Вашата фирма се регистрира директно от лицензиран американски CPA и адвокат.</p><div class="adv-list"><div class="adv-item"><span class="adv-chk">✓</span> Директна комуникация с CPA</div><div class="adv-item"><span class="adv-chk">✓</span> Юридическа проверка на документите</div><div class="adv-item"><span class="adv-chk">✓</span> Данъчна консултация включена</div></div></div>
+    <div class="adv-card"><h3>Специализирани за България</h3><p>Познаваме спецификите на българския пазар — от СИДДО спогодбата до проблемите с PayPal и Stripe.</p><div class="adv-list"><div class="adv-item"><span class="adv-chk">✓</span> СИДДО експертиза (БГ–САЩ)</div><div class="adv-item"><span class="adv-chk">✓</span> Поддръжка на български</div><div class="adv-item"><span class="adv-chk">✓</span> Viber комуникация</div></div></div>
+  </div>
+</div></section>
+
+<section><div class="sec reveal">
+  <span class="tag">Отзиви</span>
+  <h2 class="stitle">Какво казват клиентите</h2>
+  <div class="tst-grid">
+    <div class="tst"><div class="tst-stars">★★★★★</div><p>„Регистрираха LLC-то ми за 4 дни. До седмица имах Mercury сметка и работещ Stripe. Спестиха ми седмици."</p><div class="tst-who"><div class="tst-av">И</div><div><div class="tst-name">Иван К.</div><div class="tst-role">E-commerce, София</div></div></div></div>
+    <div class="tst"><div class="tst-stars">★★★★★</div><p>„Най-ценното е прекият достъп до CPA. По всяко данъчно питане получавам компетентен отговор."</p><div class="tst-who"><div class="tst-av">М</div><div><div class="tst-name">Мария Д.</div><div class="tst-role">SaaS, Пловдив</div></div></div></div>
+    <div class="tst"><div class="tst-stars">★★★★★</div><p>„Пробвах сам — загубих месец. С GetUSA всичко стана за дни. Цената е честна и без изненади."</p><div class="tst-who"><div class="tst-av">Д</div><div><div class="tst-name">Димитър П.</div><div class="tst-role">Freelancer, Варна</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="faq" id="faq"><div class="sec reveal">
+  <span class="tag">Въпроси</span>
+  <h2 class="stitle">Често задавани въпроси</h2>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Трябва ли да пътувам до САЩ? <span class="faq-plus">+</span></button><div class="faq-a"><p>Не. Целият процес е 100% дистанционен — от регистрацията до банковата сметка. Не е необходимо да стъпвате в Америка.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Колко време отнема регистрацията? <span class="faq-plus">+</span></button><div class="faq-a"><p>LLC регистрацията отнема 3–5 работни дни. EIN номерът идва за 3–4 седмици. Банковата сметка е готова до 1 седмица след LLC-то.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Дължа ли данъци в САЩ? <span class="faq-plus">+</span></button><div class="faq-a"><p>Зависи от бизнес модела. Без офис и служители в САЩ обикновено не дължите федерален данък. СИДДО спогодбата между България и САЩ предотвратява двойно облагане.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Мога ли да отворя банкова сметка? <span class="faq-plus">+</span></button><div class="faq-a"><p>Да. Помагаме за Mercury или Relay — изцяло дистанционно. Също съдействаме за Wise Business и Stripe.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Wyoming или Delaware? <span class="faq-plus">+</span></button><div class="faq-a"><p>За повечето българи Wyoming е оптимален — ниски годишни разходи, без щатски данък. Delaware е за стартъпи с инвеститори.</p></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">LLC или Corporation? <span class="faq-plus">+</span></button><div class="faq-a"><p>LLC е по-гъвкав, по-евтин и без двойно облагане — идеален за чуждестранни предприемачи. За 95% от българите LLC е правилният избор.</p></div></div>
+  </div>
+</div></section>
+
+<section class="cta-sec" id="cta"><div class="sec">
+  <span class="tag" style="justify-content:center;color:var(--orange)">Готови ли сте</span>
+  <h2 class="stitle">Стартирайте американския си<br>бизнес още днес</h2>
+  <p class="sdesc" style="max-width:480px">Попълнете формуляра и ще се свържем в рамките на 24 часа с индивидуална оферта.</p>
+  <a href="contact.html" class="btn-main">Поискай оферта →</a>
+  <div class="cta-meta">Без скрити такси <span>·</span> 100% дистанционно <span>·</span> Viber поддръжка</div>
+</div></section>
+
+</main>
+<footer><div class="ftr">
+  <div><a href="#" class="logo"><img src="logo.webp" alt="GetUSA LLC" width="400" height="67" style="height:34px;width:auto;filter:brightness(1.2)"></a><p class="ftr-desc">Вашият партньор за стартиране на американски бизнес от България. Лицензиран CPA и адвокат в САЩ.</p></div>
+  <div class="ftr-col"><h3>Услуги</h3><a href="#">LLC Регистрация</a><a href="#">EIN Заявка</a><a href="#">ITIN Заявка</a><a href="#">Данъчна декларация</a><a href="#">Счетоводство</a></div>
+  <div class="ftr-col"><h3>Ресурси</h3><a href="#">Основен гайд</a><a href="#">Калкулатор</a><a href="#">Данъчен тест</a><a href="#">Сравнение на щати</a><a href="#">Блог</a></div>
+  <div class="ftr-col"><h3>Компания</h3><a href="#">За нас</a><a href="#">Контакт</a><a href="#">Отзиви</a><a href="terms.html">Условия</a><a href="privacy.html">Поверителност</a><a href="disclaimer.html">Отказ от отговорност</a></div>
+</div><div class="ftr-btm"><span>© 2026 GetUSA LLC. Всички права запазени.</span><span>info at getusallc.com</span></div></footer>
+
+<script>
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+function toggleFaq(btn) {
+  var answer = btn.nextElementSibling;
+  var isOpen = btn.classList.contains('open');
+  var allQ = document.querySelectorAll('.faq-q');
+  for (var i = 0; i < allQ.length; i++) {
+    allQ[i].classList.remove('open');
+    allQ[i].nextElementSibling.classList.remove('open');
+  }
+  if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
+}
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+var reveals = document.querySelectorAll('.reveal');
+for (var i = 0; i < reveals.length; i++) { observer.observe(reveals[i]); }
+</script>
+
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:var(--ink);padding:1.25rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;z-index:9999;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap">
+  <p style="font-size:.88rem;color:rgba(255,255,255,.85);font-weight:500;margin:0;max-width:700px;line-height:1.6">Този уебсайт използва бисквитки за подобряване на потребителското изживяване. Вижте нашата <a href="privacy.html" style="color:var(--orange);text-decoration:underline;font-weight:700">Политика за поверителност</a>.</p>
+  <div style="display:flex;gap:.5rem;flex-shrink:0">
+    <button onclick="acceptCookies()" style="background:#b34a14;color:white;border:none;padding:.6rem 1.4rem;border-radius:8px;min-height:44px;font-weight:700;font-size:.85rem;font-family:var(--font);cursor:pointer">Приемам</button>
+    <button onclick="declineCookies()" style="background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.15);padding:.6rem 1.4rem;border-radius:8px;font-weight:700;font-size:.85rem;font-family:var(--font);cursor:pointer">Само необходими</button>
+  </div>
+</div>
+<script>
+if(localStorage.getItem('cookie-consent')){document.getElementById('cookie-banner').style.display='none'}
+function acceptCookies(){localStorage.setItem('cookie-consent','all');document.getElementById('cookie-banner').style.display='none'}
+function declineCookies(){localStorage.setItem('cookie-consent','essential');document.getElementById('cookie-banner').style.display='none'}
+</script>
+
+<div id="mobile-menu" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--bg);z-index:200;padding:2rem;flex-direction:column">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3rem">
+    <a href="#" class="logo"><img src="logo.webp" alt="GetUSA LLC" width="400" height="67" style="height:36px;width:auto"></a>
+    <button onclick="toggleMenu()" aria-label="Затвори меню" style="background:none;border:none;cursor:pointer;padding:8px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111318" stroke-width="2.5" stroke-linecap="round"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+  </div>
+  <a href="#services" onclick="toggleMenu()" style="font-size:1.25rem;font-weight:800;color:var(--ink);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--border-light)">Услуги</a>
+  <a href="#process" onclick="toggleMenu()" style="font-size:1.25rem;font-weight:800;color:var(--ink);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--border-light)">Процес</a>
+  <a href="#tools" onclick="toggleMenu()" style="font-size:1.25rem;font-weight:800;color:var(--ink);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--border-light)">Инструменти</a>
+  <a href="#faq" onclick="toggleMenu()" style="font-size:1.25rem;font-weight:800;color:var(--ink);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--border-light)">Въпроси</a>
+  <a href="contact.html" onclick="toggleMenu()" style="display:block;text-align:center;margin-top:2rem;background:var(--orange);color:white;padding:1rem;border-radius:10px;font-weight:700;font-size:1rem;text-decoration:none">Свържете се</a>
+</div>
+<script>
+function toggleMenu(){var m=document.getElementById('mobile-menu');m.style.display=m.style.display==='flex'?'none':'flex'}
+</script>
+</body>
+</html>
