@@ -22,7 +22,7 @@ export default function Footer() {
         <div>
           <h3 style={{ fontWeight: 800, fontSize: "0.82rem", color: "white", marginBottom: "0.9rem", textTransform: "uppercase", letterSpacing: "0.08em" }}>Ресурси</h3>
           {["Основен гайд","Калкулатор","Данъчен тест","Сравнение на щати","Блог"].map(s => (
-            <Link key={s} href="#" style={{ display: "block", color: "rgba(255,255,255,0.65)", textDecoration: "none", fontSize: "0.88rem", fontWeight: 600, padding: "0.3rem 0" }}>{s}</Link>
+            <Link key={s} href={s === "Блог" ? "/blog" : "#"} style={{ display: "block", color: "rgba(255,255,255,0.65)", textDecoration: "none", fontSize: "0.88rem", fontWeight: 600, padding: "0.3rem 0" }}>{s}</Link>
           ))}
         </div>
         <div>
