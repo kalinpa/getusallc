@@ -21,8 +21,8 @@ export default function Footer() {
         </div>
         <div>
           <h3 style={{ fontWeight: 800, fontSize: "0.82rem", color: "white", marginBottom: "0.9rem", textTransform: "uppercase", letterSpacing: "0.08em" }}>Ресурси</h3>
-          {["Основен гайд","Калкулатор","Данъчен тест","Сравнение на щати","Блог"].map(s => (
-            <Link key={s} href={s === "Блог" ? "/blog" : s === "Калкулатор" ? "/tools/calculator" : s === "Данъчен тест" ? "/tools/tax-test" : s === "Сравнение на щати" ? "/tools/state-comparison" : "#"} style={{ display: "block", color: "rgba(255,255,255,0.65)", textDecoration: "none", fontSize: "0.88rem", fontWeight: 600, padding: "0.3rem 0" }}>{s}</Link>
+          {["Основен гайд","Калкулатор","Данъчен тест","Сравнение на щати","Търсене","Блог"].map(s => (
+            <Link key={s} href={s === "Блог" ? "/blog" : s === "Калкулатор" ? "/tools/calculator" : s === "Данъчен тест" ? "/tools/tax-test" : s === "Сравнение на щати" ? "/tools/state-comparison" : s === "Търсене" ? "/search" : "#"} style={{ display: "block", color: "rgba(255,255,255,0.65)", textDecoration: "none", fontSize: "0.88rem", fontWeight: 600, padding: "0.3rem 0" }}>{s}</Link>
           ))}
         </div>
         <div>
