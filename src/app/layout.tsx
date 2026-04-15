@@ -146,7 +146,7 @@ body {
 .srv-btn.orange:hover { background: var(--orange-hover); border-color: var(--orange-hover); }
 
 .stp { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 2rem 1.5rem; }
-.stp-n { font-weight: 800; font-size: 2.5rem; color: var(--orange); opacity: 0.35; line-height: 1; margin-bottom: 0.75rem; }
+.stp-n { font-weight: 800; font-size: 2.5rem; color: var(--orange); opacity: 0.5; line-height: 1; margin-bottom: 0.75rem; }
 .stp h3 { font-weight: 800; font-size: 1rem; color: var(--ink); margin-bottom: 0.4rem; }
 .stp p { font-size: 0.88rem; color: var(--gray); font-weight: 500; line-height: 1.6; }
 

@@ -25,7 +25,7 @@ export default function CookieBanner() {
     }}>
       <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.85)", fontWeight: 500, margin: 0, maxWidth: 700, lineHeight: 1.6 }}>
         Този уебсайт използва бисквитки за подобряване на потребителското изживяване. Вижте нашата{" "}
-        <Link href="/privacy" style={{ color: "var(--orange)", textDecoration: "underline", fontWeight: 700 }}>Политика за поверителност</Link>.
+        <Link href="/privacy" style={{ color: "#f59e0b", textDecoration: "underline", fontWeight: 700 }}>Политика за поверителност</Link>.
       </p>
       <div style={{ display: "flex", gap: "0.5rem", flexShrink: 0 }}>
         <button onClick={() => accept("all")} style={{
