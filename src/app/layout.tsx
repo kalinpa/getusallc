@@ -291,6 +291,66 @@ details summary::-webkit-details-marker { display: none; }
 .blog-related-card:hover { border-color: var(--orange); transform: translateY(-2px); }
 .blog-related-card h4 { font-weight: 800; font-size: 0.95rem; line-height: 1.35; margin-bottom: 0.5rem; color: var(--ink); }
 
+/* Tax Test */
+.tax-page { padding: 7rem 2.5rem 4rem; max-width: 720px; margin: 0 auto; }
+.tax-header { margin-bottom: 2rem; }
+.tax-progress { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 0.75rem; overflow: hidden; }
+.tax-progress-bar { height: 100%; background: var(--orange); border-radius: 3px; transition: width 0.3s ease; }
+.tax-step-info { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: var(--gray); font-weight: 600; margin-bottom: 2rem; }
+.tax-back-btn { background: none; border: none; color: var(--orange); font-weight: 700; font-size: 0.82rem; cursor: pointer; font-family: inherit; }
+.tax-back-btn:hover { text-decoration: underline; }
+
+.tax-question { margin-bottom: 2rem; }
+.tax-q-text { font-weight: 800; font-size: 1.35rem; color: var(--ink); line-height: 1.3; margin-bottom: 0.4rem; }
+.tax-q-sub { font-size: 0.9rem; color: var(--gray); font-weight: 500; margin-bottom: 1.5rem; }
+.tax-options { display: flex; flex-direction: column; gap: 0.6rem; }
+.tax-option {
+  display: flex; align-items: center; gap: 0.85rem; padding: 1rem 1.25rem;
+  background: var(--white); border: 1.5px solid var(--border); border-radius: 12px;
+  cursor: pointer; font-family: inherit; font-size: 0.95rem; font-weight: 600;
+  color: var(--ink); transition: all 0.2s; text-align: left; width: 100%;
+}
+.tax-option:hover { border-color: var(--orange); background: var(--orange-soft); }
+.tax-option.selected { border-color: var(--orange); background: var(--orange-soft); }
+.tax-option-icon { font-size: 1.2rem; flex-shrink: 0; }
+
+.tax-result > * { margin-bottom: 1.5rem; }
+.tax-risk-card { border: 2px solid; border-radius: 16px; padding: 2rem; text-align: center; }
+.tax-risk-badge {
+  display: inline-block; color: white; font-size: 0.78rem; font-weight: 800;
+  padding: 0.35rem 1rem; border-radius: 100px; text-transform: uppercase;
+  letter-spacing: 0.06em; margin-bottom: 1rem;
+}
+.tax-risk-title { font-weight: 800; font-size: 1.25rem; color: var(--ink); margin-bottom: 0.5rem; }
+.tax-risk-summary { font-size: 0.95rem; color: var(--ink2); font-weight: 500; line-height: 1.7; }
+
+.tax-warning {
+  background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 12px;
+  padding: 1.25rem; font-size: 0.9rem; color: #dc2626; font-weight: 600; line-height: 1.6;
+}
+
+.tax-details-card {
+  background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 1.75rem;
+}
+.tax-details-card h3 { font-weight: 800; font-size: 1.05rem; color: var(--ink); margin-bottom: 1rem; }
+.tax-detail-row { display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; }
+.tax-detail-row:last-child { margin-bottom: 0; }
+.tax-detail-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 0.45rem; }
+.tax-detail-row p { font-size: 0.9rem; color: var(--ink2); font-weight: 500; line-height: 1.6; margin: 0; }
+
+.tax-links { margin-top: 1.5rem; }
+.tax-links h3 { font-weight: 800; font-size: 1.05rem; color: var(--ink); margin-bottom: 1rem; }
+.tax-links-grid { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+.tax-link-card {
+  display: flex; gap: 1rem; align-items: center; padding: 1rem 1.25rem;
+  background: var(--white); border: 1.5px solid var(--border); border-radius: 12px;
+  color: inherit; transition: all 0.2s;
+}
+.tax-link-card:hover { border-color: var(--orange); transform: translateY(-2px); }
+.tax-link-card span:first-child { font-size: 1.5rem; }
+.tax-link-card strong { font-weight: 800; font-size: 0.92rem; color: var(--ink); display: block; }
+.tax-link-card p { font-size: 0.82rem; color: var(--gray); font-weight: 500; margin: 0.15rem 0 0; }
+
 /* Calculator */
 .calc-page { padding: 7rem 2.5rem 4rem; }
 .calc-header { margin-bottom: 3rem; }
