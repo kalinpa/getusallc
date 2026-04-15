@@ -243,7 +243,21 @@ export function search(query: string, limit = 20): SearchResult[] {
   return results.slice(0, limit);
 }
 
-export function getSuggestions(): string[] {
+export function getSuggestions(lang = 'bg'): string[] {
+  if (lang === 'en') {
+    return [
+      'LLC registration',
+      'Wyoming vs Delaware',
+      'EIN number',
+      'ITIN',
+      'Stripe for foreigners',
+      'US bank account',
+      'tax treaty',
+      'taxes',
+      'annual costs',
+      'Registered Agent',
+    ];
+  }
   return [
     'LLC регистрация',
     'Wyoming или Delaware',
