@@ -81,8 +81,8 @@ ul, ol { list-style: none; }
 :root {
   --bg: #fafaf8; --white: #fff; --ink: #111318; --ink2: #2a2d35;
   --gray: #6b7080; --gray-light: #9ca3af; --border: #e5e7eb;
-  --border-light: #f0f1f3; --surface: #f3f4f6; --orange: #d95b1c;
-  --orange-soft: #fff0e8; --orange-hover: #c44e15; --green: #16a34a;
+  --border-light: #f0f1f3; --surface: #f3f4f6; --orange: #c44e15;
+  --orange-soft: #fff0e8; --orange-hover: #a84010; --green: #16a34a;
   --green-soft: #dcfce7; --blue: #2563eb;
 }
 
@@ -108,7 +108,7 @@ body {
 
 .tag {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  font-size: 0.78rem; font-weight: 800; color: var(--orange);
+  font-size: 0.78rem; font-weight: 800; color: #b34512;
   text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.75rem;
 }
 .tag::before { content: ''; width: 18px; height: 2.5px; background: var(--orange); border-radius: 2px; }
@@ -146,7 +146,7 @@ body {
 .srv-btn.orange:hover { background: var(--orange-hover); border-color: var(--orange-hover); }
 
 .stp { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 2rem 1.5rem; }
-.stp-n { font-weight: 800; font-size: 2.5rem; color: var(--orange); opacity: 0.2; line-height: 1; margin-bottom: 0.75rem; }
+.stp-n { font-weight: 800; font-size: 2.5rem; color: var(--orange); opacity: 0.35; line-height: 1; margin-bottom: 0.75rem; }
 .stp h3 { font-weight: 800; font-size: 1rem; color: var(--ink); margin-bottom: 0.4rem; }
 .stp p { font-size: 0.88rem; color: var(--gray); font-weight: 500; line-height: 1.6; }
 
@@ -155,7 +155,7 @@ body {
 .tcard-ico { width: 48px; height: 48px; border-radius: 12px; background: var(--surface); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
 .tcard h3 { font-weight: 800; font-size: 1rem; color: var(--ink); margin-bottom: 0.3rem; }
 .tcard p { font-size: 0.88rem; color: var(--gray); font-weight: 500; line-height: 1.55; }
-.tcard-link { display: inline-block; margin-top: 0.4rem; font-size: 0.82rem; font-weight: 700; color: var(--orange); }
+.tcard-link { display: inline-block; margin-top: 0.4rem; font-size: 0.82rem; font-weight: 700; color: #b34512; }
 
 .adv-card { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 2.5rem; position: relative; overflow: hidden; }
 .adv-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--orange); }
@@ -173,7 +173,7 @@ body {
 .ps-dot.bad { background: #fef2f2; color: #ef4444; }
 .ps-dot.ok { background: var(--green-soft); color: var(--green); }
 
-.hero-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--orange-soft); border: 1px solid rgba(217,91,28,0.15); padding: 0.45rem 1rem; border-radius: 100px; font-size: 0.8rem; font-weight: 700; color: var(--orange); margin-bottom: 1.5rem; animation: fadeUp 0.6s ease both; }
+.hero-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--orange-soft); border: 1px solid rgba(196,78,21,0.2); padding: 0.45rem 1rem; border-radius: 100px; font-size: 0.8rem; font-weight: 700; color: #b34512; margin-bottom: 1.5rem; animation: fadeUp 0.6s ease both; }
 .hero-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px rgba(22,163,74,0.5); animation: blink 2s infinite; display: inline-block; }
 
 .fbadge { position: absolute; background: var(--white); border: 1px solid var(--border); padding: 0.65rem 1rem; border-radius: 10px; display: flex; align-items: center; gap: 0.55rem; font-size: 0.82rem; font-weight: 700; color: var(--ink); box-shadow: 0 8px 25px rgba(0,0,0,0.07); }
@@ -211,7 +211,7 @@ details summary::-webkit-details-marker { display: none; }
 }
 .blog-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-color: #d1d5db; }
 .blog-card-cat {
-  display: inline-block; font-size: 0.72rem; font-weight: 800; color: var(--orange);
+  display: inline-block; font-size: 0.72rem; font-weight: 800; color: #b34512;
   text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;
   background: var(--orange-soft); padding: 0.25rem 0.65rem; border-radius: 5px;
 }
