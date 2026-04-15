@@ -351,6 +351,76 @@ details summary::-webkit-details-marker { display: none; }
 .tax-link-card strong { font-weight: 800; font-size: 0.92rem; color: var(--ink); display: block; }
 .tax-link-card p { font-size: 0.82rem; color: var(--gray); font-weight: 500; margin: 0.15rem 0 0; }
 
+/* State Comparison */
+.sc-page { padding: 7rem 2.5rem 4rem; }
+.sc-header { margin-bottom: 2rem; }
+.sc-selector { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.sc-sel-btn {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1rem;
+  border: 1.5px solid var(--border); border-radius: 10px; background: var(--white);
+  cursor: pointer; font-family: inherit; font-size: 0.88rem; font-weight: 700;
+  color: var(--ink); transition: all 0.2s;
+}
+.sc-sel-btn:hover { border-color: var(--orange); }
+.sc-sel-btn.active { border-color: var(--orange); background: var(--orange-soft); }
+.sc-sel-flag { font-size: 1.1rem; }
+.sc-sel-badge { color: var(--orange); font-size: 0.8rem; }
+
+.sc-winners { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.sc-winner {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1rem;
+  background: var(--surface); border-radius: 8px; font-size: 0.82rem;
+}
+.sc-winner-label { font-weight: 600; color: var(--gray); }
+.sc-winner-name { font-weight: 800; color: var(--ink); }
+
+.sc-table-wrap { overflow-x: auto; margin-bottom: 1.5rem; -webkit-overflow-scrolling: touch; }
+.sc-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+.sc-th-label { width: 180px; }
+.sc-th-state {
+  text-align: center; padding: 1.25rem 1rem; font-weight: 800; font-size: 1rem;
+  background: var(--surface); border-bottom: 2px solid var(--border);
+}
+.sc-th-flag { font-size: 1.4rem; display: block; margin-bottom: 0.25rem; }
+.sc-th-rec {
+  display: block; font-size: 0.65rem; color: var(--orange); font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.2rem;
+}
+.sc-section-row td {
+  font-weight: 800; font-size: 0.78rem; color: var(--orange);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 1.25rem 0.75rem 0.5rem; border-bottom: 2px solid var(--orange-soft);
+}
+.sc-label {
+  padding: 0.85rem 0.75rem; font-weight: 700; font-size: 0.85rem; color: var(--gray);
+  border-bottom: 1px solid var(--border-light); vertical-align: top;
+}
+.sc-val {
+  padding: 0.85rem 0.75rem; font-weight: 600; font-size: 0.88rem; color: var(--ink);
+  border-bottom: 1px solid var(--border-light); text-align: center; vertical-align: top;
+}
+.sc-val-sm { display: block; font-size: 0.78rem; color: var(--gray); font-weight: 500; margin-top: 0.3rem; line-height: 1.4; }
+.sc-val-total { font-weight: 800; font-size: 1.05rem; color: var(--orange); }
+.sc-total-row td { background: rgba(196,78,21,0.03); }
+.sc-best {
+  display: block; font-size: 0.65rem; font-weight: 800; color: var(--green);
+  text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.2rem;
+}
+.sc-verdict { font-size: 0.85rem; font-weight: 600; color: var(--ink2); line-height: 1.55; text-align: left; }
+
+.sc-dots { display: flex; gap: 4px; justify-content: center; margin-bottom: 0.3rem; }
+.sc-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.sc-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; justify-content: center; }
+.sc-tag-good {
+  font-size: 0.72rem; font-weight: 700; color: var(--green); background: var(--green-soft);
+  padding: 0.2rem 0.5rem; border-radius: 4px;
+}
+.sc-tag-bad {
+  font-size: 0.72rem; font-weight: 700; color: #ef4444; background: #fef2f2;
+  padding: 0.2rem 0.5rem; border-radius: 4px;
+}
+
 /* Calculator */
 .calc-page { padding: 7rem 2.5rem 4rem; }
 .calc-header { margin-bottom: 3rem; }
@@ -440,5 +510,8 @@ details summary::-webkit-details-marker { display: none; }
   .blog-related-grid { grid-template-columns: 1fr !important; }
   .calc-page { padding: 6rem 1.25rem 3rem; }
   .calc-grid { grid-template-columns: 1fr !important; }
+  .sc-page { padding: 6rem 1.25rem 3rem; }
+  .sc-th-label { width: 120px; }
+  .sc-winners { flex-direction: column; }
 }
 `;
