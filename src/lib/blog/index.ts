@@ -1,0 +1,74 @@
+import type { Lang } from "../i18n";
+import { defaultLang } from "../i18n";
+import type { BlogPost, LocalizedPost } from "./types";
+
+import { post as p1 } from "./posts/kak-da-registriram-llc-v-amerika-ot-bulgaria";
+import { post as p2 } from "./posts/wyoming-vs-delaware-koj-shtat-za-bulgari";
+import { post as p3 } from "./posts/stripe-ot-bulgaria-s-amerikansko-llc";
+import { post as p4 } from "./posts/siddo-spogodba-bulgaria-sasht-danaci";
+import { post as p5 } from "./posts/ein-nomer-kakvo-e-kak-da-go-poluchite";
+
+export type { BlogPost, Section, FAQ } from "./types";
+
+const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5];
+
+/**
+ * Merges meta + translation into a single BlogPost.
+ * Falls back to defaultLang if requested lang isn't translated yet.
+ */
+function materialize(p: LocalizedPost, lang: Lang): BlogPost | undefined {
+  const tr = p.translations[lang] || p.translations[defaultLang];
+  if (!tr) return undefined;
+  return {
+    slug: p.meta.slug,
+    date: p.meta.date,
+    updated: p.meta.updated,
+    author: p.meta.author,
+    image: p.meta.image,
+    readingTime: p.meta.readingTime,
+    relatedSlugs: p.meta.relatedSlugs,
+    title: tr.title,
+    description: tr.description,
+    category: tr.category,
+    tags: tr.tags,
+    tldr: tr.tldr,
+    content: tr.content,
+    faq: tr.faq,
+  };
+}
+
+export function getAllPosts(lang: Lang = defaultLang): BlogPost[] {
+  return allPosts
+    .map((p) => materialize(p, lang))
+    .filter((p): p is BlogPost => Boolean(p))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+export function getPostBySlug(slug: string, lang: Lang = defaultLang): BlogPost | undefined {
+  const found = allPosts.find((p) => p.meta.slug === slug);
+  return found ? materialize(found, lang) : undefined;
+}
+
+export function getRelatedPosts(post: BlogPost, lang: Lang = defaultLang): BlogPost[] {
+  if (post.relatedSlugs?.length) {
+    return post.relatedSlugs
+      .map((s) => getPostBySlug(s, lang))
+      .filter((p): p is BlogPost => Boolean(p));
+  }
+  return getAllPosts(lang)
+    .filter((p) => p.slug !== post.slug && p.category === post.category)
+    .slice(0, 3);
+}
+
+export function getAllSlugs(): string[] {
+  return allPosts.map((p) => p.meta.slug);
+}
+
+/**
+ * Returns languages a post is available in.
+ */
+export function getPostLanguages(slug: string): Lang[] {
+  const found = allPosts.find((p) => p.meta.slug === slug);
+  if (!found) return [];
+  return Object.keys(found.translations) as Lang[];
+}

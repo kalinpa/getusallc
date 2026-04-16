@@ -16,7 +16,7 @@ export default async function BlogPage({ params }: { params: Promise<{ lang: str
   if (!isValidLang(langParam)) return null;
   const lang = langParam as Lang;
   const d = getDictionarySync(lang);
-  const posts = getAllPosts();
+  const posts = getAllPosts(lang);
   const p = `/${lang}`;
   const locale = lang === 'bg' ? 'bg-BG' : 'en-US';
 

@@ -13,7 +13,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await params;
-  const post = getPostBySlug(slug);
+  if (!isValidLang(lang)) return {};
+  const post = getPostBySlug(slug, lang as Lang);
   if (!post) return {};
   return {
     title: post.title,
@@ -27,9 +28,9 @@ export default async function BlogArticle({ params }: { params: Promise<{ lang: 
   if (!isValidLang(langParam)) notFound();
   const lang = langParam as Lang;
   const d = getDictionarySync(lang);
-  const post = getPostBySlug(slug);
+  const post = getPostBySlug(slug, lang);
   if (!post) notFound();
-  const related = getRelatedPosts(post);
+  const related = getRelatedPosts(post, lang);
   const p = `/${lang}`;
   const locale = lang === 'bg' ? 'bg-BG' : 'en-US';
 

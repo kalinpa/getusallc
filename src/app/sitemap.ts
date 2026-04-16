@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
-import { languages } from "@/lib/i18n";
+import { languages, type Lang } from "@/lib/i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.getusallc.com";
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/disclaimer", cf: "yearly" as const, p: 0.3 },
   ];
 
-  const staticEntries: MetadataRoute.Sitemap = languages.flatMap(lang =>
+  const staticEntries: MetadataRoute.Sitemap = languages.flatMap((lang: Lang) =>
     pages.map(pg => ({
       url: `${base}/${lang}${pg.path}`,
       lastModified: new Date(),
@@ -29,8 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const blogEntries: MetadataRoute.Sitemap = languages.flatMap(lang =>
-    getAllPosts().map(post => ({
+  const blogEntries: MetadataRoute.Sitemap = languages.flatMap((lang: Lang) =>
+    getAllPosts(lang).map(post => ({
       url: `${base}/${lang}/blog/${post.slug}`,
       lastModified: new Date(post.updated || post.date),
       changeFrequency: "monthly" as const,
