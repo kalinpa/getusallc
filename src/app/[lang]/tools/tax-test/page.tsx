@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { isValidLang, type Lang } from "@/lib/i18n";
 import { getDictionarySync, type Dictionary } from "@/lib/dictionaries";
+import { Emoji } from "@/components/Emoji";
 
 interface RiskResult {
   level: "low" | "medium" | "high";
@@ -174,7 +175,7 @@ export default function TaxTestPage() {
                     className={`tax-option${answers[currentQ.id] === opt.value ? " selected" : ""}`}
                     onClick={() => selectAnswer(opt.value)}
                   >
-                    {opt.icon && <span className="tax-option-icon">{opt.icon}</span>}
+                    {opt.icon && <span className="tax-option-icon"><Emoji size={20}>{opt.icon}</Emoji></span>}
                     <span>{opt.label}</span>
                   </button>
                 ))}
