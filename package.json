@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postbuild": "node -e \"const h=require('https');['google.com','bing.com'].forEach(d=>h.get('https://www.'+d+'/ping?sitemap=https://www.getusallc.com/sitemap.xml',r=>console.log(d+': '+r.statusCode)))\""
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

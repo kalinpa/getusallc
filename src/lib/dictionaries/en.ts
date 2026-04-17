@@ -125,7 +125,7 @@ const en: Dictionary = {
   footer: {
     desc: "Your partner for launching a US business from Eastern Europe. Licensed CPA and attorney in the US.",
     servicesTitle: "Services",
-    servicesLinks: ["LLC Registration", "EIN Application", "ITIN Application", "Tax Filing", "Bookkeeping"],
+    servicesLinks: ["LLC Registration", "EIN Application", "ITIN Application", "Tax Filing", "Bookkeeping", "Payments & Banking"],
     resourcesTitle: "Resources",
     resourcesLinks: ["Main Guide", "Calculator", "Tax Test", "State Comparison", "Search", "Blog"],
     companyTitle: "Company",
