@@ -10,10 +10,13 @@ import { post as p5 } from "./posts/ein-nomer-kakvo-e-kak-da-go-poluchite";
 import { post as p6 } from "./posts/itin-za-balgari-bez-poseshtenie-v-sasht";
 import { post as p7 } from "./posts/mercury-vs-relay-bankova-smetka-us-llc";
 import { post as p8 } from "./posts/godishni-zadalzhenia-us-llc-za-balgari";
+import { post as p9 } from "./posts/nulev-oborot-llc-form-5472-zadalzhitelno";
+import { post as p10 } from "./posts/amazon-fba-za-balgari-pulen-gaid";
+import { post as p11 } from "./posts/koga-dalzha-us-danak-eci-ustb-obiasnenie";
 
 export type { BlogPost, Section, FAQ } from "./types";
 
-const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5, p6, p7, p8];
+const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11];
 
 /**
  * Merges meta + translation into a single BlogPost.
