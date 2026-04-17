@@ -7,10 +7,13 @@ import { post as p2 } from "./posts/wyoming-vs-delaware-koj-shtat-za-bulgari";
 import { post as p3 } from "./posts/stripe-ot-bulgaria-s-amerikansko-llc";
 import { post as p4 } from "./posts/siddo-spogodba-bulgaria-sasht-danaci";
 import { post as p5 } from "./posts/ein-nomer-kakvo-e-kak-da-go-poluchite";
+import { post as p6 } from "./posts/itin-za-balgari-bez-poseshtenie-v-sasht";
+import { post as p7 } from "./posts/mercury-vs-relay-bankova-smetka-us-llc";
+import { post as p8 } from "./posts/godishni-zadalzhenia-us-llc-za-balgari";
 
 export type { BlogPost, Section, FAQ } from "./types";
 
-const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5];
+const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5, p6, p7, p8];
 
 /**
  * Merges meta + translation into a single BlogPost.
