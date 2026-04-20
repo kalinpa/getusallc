@@ -13,10 +13,14 @@ import { post as p8 } from "./posts/godishni-zadalzhenia-us-llc-za-balgari";
 import { post as p9 } from "./posts/nulev-oborot-llc-form-5472-zadalzhitelno";
 import { post as p10 } from "./posts/amazon-fba-za-balgari-pulen-gaid";
 import { post as p11 } from "./posts/koga-dalzha-us-danak-eci-ustb-obiasnenie";
+import { post as p12 } from "./posts/deklariarane-us-llc-prihodi-v-nap";
+import { post as p13 } from "./posts/dropshipping-sales-tax-us-llc";
+import { post as p14 } from "./posts/w2-contractor-us-llc-za-balgari";
+import { post as p15 } from "./posts/dds-uslugi-kum-us-klient-ot-bulgaria";
 
 export type { BlogPost, Section, FAQ } from "./types";
 
-const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11];
+const allPosts: LocalizedPost[] = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15];
 
 /**
  * Merges meta + translation into a single BlogPost.
