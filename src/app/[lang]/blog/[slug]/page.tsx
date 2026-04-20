@@ -11,6 +11,19 @@ export async function generateStaticParams() {
   return languages.flatMap((lang) => slugs.map((slug) => ({ lang, slug })));
 }
 
+/**
+ * Rewrites internal links in blog HTML to include the language prefix.
+ * Turns href="/blog/foo" into href="/bg/blog/foo" (or en, ro, etc.)
+ * Turns href="/contact" into href="/bg/contact".
+ * Leaves external links and already-prefixed links untouched.
+ */
+function prefixInternalLinks(html: string, lang: string): string {
+  return html
+    .replace(/href="\/blog\//g, `href="/${lang}/blog/`)
+    .replace(/href="\/contact"/g, `href="/${lang}/contact"`)
+    .replace(/href="\/contact#/g, `href="/${lang}/contact#`);
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await params;
   if (!isValidLang(lang)) return {};
@@ -110,7 +123,7 @@ export default async function BlogArticle({ params }: { params: Promise<{ lang: 
           {post.content.map((section) => (
             <section key={section.id} id={section.id} className="blog-section">
               <h2 className="blog-heading">{section.heading}</h2>
-              <div dangerouslySetInnerHTML={{ __html: section.body }} />
+              <div dangerouslySetInnerHTML={{ __html: prefixInternalLinks(section.body, lang) }} />
             </section>
           ))}
 
